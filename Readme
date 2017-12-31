@@ -1,0 +1,8 @@
+Steps to run the driver drowsiness detection project (CSE 547 Discrete Mathematics):
+
+1) Run the run_extract_eyes.sh program to track the eyes for different videos(training data) and to store the patches of the eyes in a folder for every video. (Alert and Drowsy)
+2) Use this training data to retrain the CNN model(Inception V3 model).
+3) Run extract_features.py to extract the features from the second last layer of the CNN model which is a 2048-d vector and to create a sequence of frames as a single vector to be given as an input to the LSTM which is a part of Recurrent Neural Networks(RNN) 
+4) Run data.py and models.py
+5) Finally run train.py to get the final predictions for the test sequence of data and the alarm will sound if the model predicts the sequence to be in a drowsy state.
+ 
