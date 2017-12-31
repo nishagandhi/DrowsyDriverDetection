@@ -2,8 +2,14 @@
 This is a project implementing Computer Vision and Deep Learning concepts to detect drowsiness of a driver and sound an alarm if drowsy.
 
 •	Built a model for drowsiness detection of a driver by real-time Eye-Tracking in videos using Haar Cascades and CamShift algorithm.
+
+
 •	Used the significant features for each video frame extracted by CNN from the final pooling layer to stitch as a sequence of feature vectors for consecutive frames.   
+
+
 •	This sequence (2048-D) is given as an input to Long Short-Term Memory (LSTM) Recurrent Neural Networks (RNN), which predicts the drowsiness of the driver given the video sequence and sounds an alarm in such a case.
+
+
 •	Optimized network weights by Adam Optimization algorithm.
 
 Technologies used: Python 2.7, OpenCV 3.3.0, Tensorflow, Keras, CNN, RNN, LSTM.
